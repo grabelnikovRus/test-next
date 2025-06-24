@@ -16,7 +16,7 @@ export const Button = ({
 }: PropsWithChildren<ButtonProps>) => {
   return (
     <button 
-      className={`${s.button} ${s.className} ${disabled ? s.disabled : ""}`} 
+      className={`${s.button} ${className} ${disabled ? s.disabled : ""}`} 
       disabled={disabled}
       {...props}
     >

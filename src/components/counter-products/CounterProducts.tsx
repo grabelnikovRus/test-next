@@ -26,7 +26,7 @@ export const CounterProducts = (props: ProductItemType) => {
   }
 
   const changeInput = (e: ChangeEvent<HTMLInputElement>) => {
-    let value = +e.target.value.replace(/\D/ig, "");
+    const value = +e.target.value.replace(/\D/ig, "");
 
     setCount(value);
     changeCount(props.id, value);

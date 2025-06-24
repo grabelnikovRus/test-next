@@ -6,7 +6,7 @@ import { useIntersection } from "@/src/shared/useIntersection";
 import s from "./Products.module.css";
 
 export const Products = () => {
-  const { data, isLoading, hasNextPage, fetchNextPage, ...r} = useInfiniteQuery({
+  const { data, isLoading, hasNextPage, fetchNextPage } = useInfiniteQuery({
     queryKey: ['products', ],
     queryFn: (meta) => api.getProducts(meta.pageParam),
     initialPageParam: 1,
