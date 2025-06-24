@@ -1,0 +1,28 @@
+.card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  background: var(--background-first);
+  border-radius: 16px;
+  padding: 16px;
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    width: 300px;
+  }
+}
+
+.img {
+  border-radius: 16px;
+}
+
+.price,
+.title {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 30px;
+}

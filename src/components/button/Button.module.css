@@ -1,0 +1,15 @@
+.button {
+  padding: 10px;
+  color: var(--white);
+  font-size: 36px;
+  line-height: 44px;
+  border-radius: 16px;
+  background: var(--black);
+  font-weight: 400;
+  border: none;
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.5;
+}

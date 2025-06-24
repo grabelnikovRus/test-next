@@ -1,0 +1,6 @@
+.page {
+  @media (min-width: 1024px) {
+    display: grid;
+    justify-content: center;
+  }
+}

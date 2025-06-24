@@ -1,0 +1,14 @@
+.block {
+  width: 100%;
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: auto minmax(80px, 150px) auto;
+  gap: 8px;
+  align-content: flex-end;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: auto minmax(120px, 120px) auto;
+  }
+}

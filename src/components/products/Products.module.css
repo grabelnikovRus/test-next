@@ -1,0 +1,26 @@
+.list {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+  max-width: 600px;
+
+  @media (min-width: 1024px) {
+    max-width: auto;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background-color: var(--background-first);
+  border-radius: 16px;
+  color: var(--black);
+  font-size: 36px;
+  line-height: 44px;
+}

@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: var(--gray);
+  padding: 6px 20px;
+  margin-bottom: 100px;
+  border-radius: 16px;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    padding: 16px 20px;
+    margin: 0 auto 100px;
+    max-width: 1420px;
+  }
+}

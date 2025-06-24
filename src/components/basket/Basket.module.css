@@ -1,0 +1,74 @@
+.basket {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  background: var(--background-first);
+  border-radius: 16px;
+  padding: 16px;
+  gap: 10px;
+  border: 3px solid var(--gray);
+  margin-top: 100px;
+  margin-bottom: 48px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 2/3fr 1/3fr;
+    grid-template-areas: 
+      "title title"
+      "list list"
+      "input btn"
+      "empty empty";
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.title {
+  justify-self: center;
+  text-align: center;
+  color: var(--black);
+  font-size: 36px;
+  line-height: 44px;
+
+  @media (min-width: 1024px) {
+    grid-area: title;
+  }
+}
+
+.list{
+  @media (min-width: 1024px) {
+    grid-area: list;
+  }
+}
+
+.btn {
+  @media (min-width: 1024px) {
+    grid-area: btn;
+  }
+}
+
+.input {
+  @media (min-width: 1024px) {
+    grid-area: input;
+  }
+}
+
+.empty {
+  color: var(--red);
+  font-size: 24px;
+  line-height: 30px;
+
+  @media (min-width: 1024px) {
+    grid-area: empty;
+  }
+}
